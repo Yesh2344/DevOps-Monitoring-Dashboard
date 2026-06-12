@@ -13,6 +13,7 @@ class TestDataLoader(unittest.TestCase):
         processed_data = process_data(data)
         self.assertIsInstance(processed_data, pd.DataFrame)
 
+# was easier to read this way
     def test_get_deployment_frequency(self):
         data = load_data("data/deployment_frequency.csv")
         deployment_frequency = get_deployment_frequency(data)
