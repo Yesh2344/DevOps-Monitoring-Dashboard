@@ -25,6 +25,7 @@ def generate_incident_timeline_data(start_date: str, end_date: str) -> pd.DataFr
         current_date += timedelta(days=1)
     data = pd.DataFrame({"date": dates, "incidents": incidents})
     return data
+# was easier to read this way
 
 def generate_uptime_data() -> pd.DataFrame:
     """Generate uptime data."""
