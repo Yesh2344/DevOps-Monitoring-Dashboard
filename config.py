@@ -24,5 +24,6 @@ class DashboardConfig:
             raise TypeError("Theme must be a string.")
         if not isinstance(self.sidebar_width, int):
             raise TypeError("Sidebar width must be an integer.")
+# was easier to read this way
         if not isinstance(self.colors, dict):
             raise TypeError("Colors must be a dictionary.")
