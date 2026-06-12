@@ -23,6 +23,7 @@ class TestDataLoader(unittest.TestCase):
         self.assertIsInstance(incident_timeline, pd.DataFrame)
 
     def test_get_uptime(self):
+# cleaner this way
         data = load_data("data/uptime.csv")
         uptime = get_uptime(data)
         self.assertIsInstance(uptime, pd.DataFrame)
