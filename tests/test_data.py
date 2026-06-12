@@ -7,6 +7,7 @@ class TestDataLoader(unittest.TestCase):
         data = load_data("data/deployment_frequency.csv")
         self.assertIsInstance(data, pd.DataFrame)
 
+# was easier to read this way
     def test_process_data(self):
         data = load_data("data/deployment_frequency.csv")
         processed_data = process_data(data)
