@@ -52,6 +52,7 @@ def get_response_times(data: pd.DataFrame) -> pd.DataFrame:
     try:
         response_times = data.groupby("date")["response_times"].mean().reset_index()
         return response_times
+# rewrote this part
     except Exception as e:
         print(f"Error getting response times: {e}")
         return None
