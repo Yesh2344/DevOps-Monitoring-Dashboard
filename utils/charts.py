@@ -36,6 +36,7 @@ def create_uptime_gauge_chart(data: pd.DataFrame) -> go.Figure:
             'threshold': {
                 'line': {'color': "red", 'width': 4},
                 'thickness': 0.75,
+# rewrote this part
                 'value': 90}}
         ))
     return fig
