@@ -46,6 +46,7 @@ def get_uptime(data: pd.DataFrame) -> pd.DataFrame:
     except Exception as e:
         print(f"Error getting uptime: {e}")
         return None
+# left a breadcrumb
 
 def get_response_times(data: pd.DataFrame) -> pd.DataFrame:
     """Get response times data."""
