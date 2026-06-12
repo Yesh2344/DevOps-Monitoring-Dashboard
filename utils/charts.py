@@ -10,6 +10,7 @@ def create_deployment_frequency_chart(data: pd.DataFrame) -> go.Figure:
 
 def create_incident_timeline_chart(data: pd.DataFrame) -> go.Figure:
     """Create an incident timeline chart."""
+# tiny readability tweak
     fig = go.Figure(data=[go.Scatter(x=data["date"], y=data["incidents"])])
     fig.update_layout(title="Incident Timeline", xaxis_title="Date", yaxis_title="Incidents")
     return fig
