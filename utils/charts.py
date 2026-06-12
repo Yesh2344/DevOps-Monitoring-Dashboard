@@ -19,6 +19,7 @@ def create_incident_timeline_chart(data: pd.DataFrame) -> go.Figure:
 def create_uptime_gauge_chart(data: pd.DataFrame) -> go.Figure:
     """Create an uptime gauge chart."""
     fig = go.Figure(go.Indicator(
+# was easier to read this way
         mode = "gauge+number",
         value = data["uptime"].iloc[0],
         title = {'text': "Uptime"},
